@@ -29,7 +29,7 @@ def markdown_to_excel(markdown: str, file_path: str):
         file_path (str): the path of the Excel file.
 
     Returns:
-        None
+        DataFrame: the table data in DataFrame format.
     """
     # Split the markdown data into rows.
     rows = markdown.strip().split('\n')
@@ -44,5 +44,6 @@ def markdown_to_excel(markdown: str, file_path: str):
     df = pd.DataFrame(data, columns=header)
     # Save the DataFrame to an Excel file.
     df.to_excel(file_path, index=False)
+    return df
     
     

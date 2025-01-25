@@ -36,4 +36,4 @@ map3d.add_schema(
     ),
 ).set_global_opts(
     title_opts=opts.TitleOpts(title="中国城市通勤半径", pos_top='3%', pos_left='center'),
-).render('China3D.html')
+)
