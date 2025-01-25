@@ -1,14 +1,11 @@
-from BuildExcel import markdown_to_excel
-
+import geopandas as gpd
+import matplotlib.pyplot as plt
+plt.ion()
 
 def main():
-    # Read MarkDown File cities-rads.md and Convert to Excel File cities-rads.xlsx
-    markdown_path = "DataSet/cities-workhomedis.md"
-    excel = "DataSet/cities-workhomedis.xlsx"
-    # Read the markdown file to string.
-    with open(markdown_path, 'r') as f:
-        markdown = f.read()
-    markdown_to_excel(markdown, excel)
+
+
+    pass
 
 if __name__ == '__main__':
     main()
