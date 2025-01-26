@@ -103,43 +103,46 @@ map3d = Map3D(
 
 map3d.add_schema(
         itemstyle_opts=opts.ItemStyleOpts(
-            color="rgb(5,101,123)",
-            opacity=1,
-            border_width=0.8,
-            border_color="rgb(62,215,213)",
+            color="rgba(75,0,130,0.5)",  # Dark purple color with transparency
+            opacity=0.5,
+            border_width=1,
+            border_color="rgba(0,0,139,0.5)",  # Dark blue color with transparency
         ),
         map3d_label=opts.Map3DLabelOpts(
             is_show=False,
-            formatter=JsCode("function(data){return data.name + " " + data.value[2];}"),
         ),
         emphasis_label_opts=opts.LabelOpts(
             is_show=False,
             color="#fff",
             font_size=10,
-            background_color="rgba(0,23,11,0)",
+            background_color="rgba(0,0,0,0.5)",  # Semi-transparent black
         ),
         light_opts=opts.Map3DLightOpts(
-            main_color="#fff",
-            main_intensity=1.2,
+            main_color="#9370DB",  # Medium purple light
+            main_intensity=1.5,
             main_shadow_quality="high",
             is_main_shadow=False,
-            main_beta=10,
-            ambient_intensity=0.3,
+            main_beta=30,
+            ambient_intensity=0.4,
         ),
 ).add(
-    series_name="bar3D",
+    series_name="通勤半径",
     data_pair=example_data,
     type_=ChartType.BAR3D,
-    bar_size=1,
-    shading="lambert",
+    bar_size=0.32,
+    shading="realistic",  # More realistic shading
     label_opts=opts.LabelOpts(
         is_show=False,
-        formatter=JsCode(
-            "function(data){return data.name + ' ' + data.value[2];}"
-        )
-    )
+    ),
+    itemstyle_opts=opts.ItemStyleOpts(
+        color="rgba(255,105,180,0.7)",  # Pink color with transparency
+        opacity=0.7,
+    ),
 ).set_global_opts(
-    title_opts=opts.TitleOpts(title="中国城市通勤半径", pos_top='3%', pos_left='center'),
+    title_opts=opts.TitleOpts(title="中国城市通勤半径", pos_top='3%', pos_left='center', title_textstyle_opts=opts.TextStyleOpts(color="#9370DB")),  # Medium purple title
+    tooltip_opts=opts.TooltipOpts(
+        formatter=JsCode("function(data){return data.name + ' 通勤半径：' + data.value[2];}"),
+    ),
 )
 
 

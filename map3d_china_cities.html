@@ -11,11 +11,11 @@
     
 </head>
 <body >
-    <div id="7fe4a91660684e3e9b05f9b6416eeeff" class="chart-container" style="width:900px; height:600px; "></div>
+    <div id="7c372e4c2f5049ee8b72ef7dba06dea3" class="chart-container" style="width:900px; height:600px; "></div>
     <script>
-        var chart_7fe4a91660684e3e9b05f9b6416eeeff = echarts.init(
-            document.getElementById('7fe4a91660684e3e9b05f9b6416eeeff'), 'purple-passion', {renderer: 'canvas'});
-        var option_7fe4a91660684e3e9b05f9b6416eeeff = {
+        var chart_7c372e4c2f5049ee8b72ef7dba06dea3 = echarts.init(
+            document.getElementById('7c372e4c2f5049ee8b72ef7dba06dea3'), 'purple-passion', {renderer: 'canvas'});
+        var option_7c372e4c2f5049ee8b72ef7dba06dea3 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -30,20 +30,23 @@
     "series": [
         {
             "type": "bar3D",
-            "name": "bar3D",
+            "name": "\u901a\u52e4\u534a\u5f84",
             "coordinateSystem": "geo3D",
             "grid3DIndex": 0,
             "geo3DIndex": 0,
             "globeIndex": 0,
-            "barSize": 1,
+            "barSize": 0.32,
             "bevelSize": 0,
             "bevelSmoothness": 2,
             "minHeight": 2,
             "label": {
                 "show": false,
                 "margin": 8,
-                "formatter": function(data){return data.name + ' ' + data.value[2];},
                 "valueAnimation": false
+            },
+            "itemStyle": {
+                "color": "rgba(255,105,180,0.7)",
+                "opacity": 0.7
             },
             "emphasis": {},
             "data": [
@@ -408,7 +411,7 @@
                     ]
                 }
             ],
-            "shading": "lambert",
+            "shading": "realistic",
             "zlevel": -10,
             "silent": false,
             "animation": true,
@@ -419,7 +422,7 @@
     "legend": [
         {
             "data": [
-                "bar3D"
+                "\u901a\u52e4\u534a\u5f84"
             ],
             "selected": {},
             "show": true,
@@ -458,6 +461,7 @@
         "confine": false,
         "appendToBody": false,
         "transitionDuration": 0.4,
+        "formatter": function(data){return data.name + ' \u901a\u52e4\u534a\u5f84\uff1a' + data.value[2];},
         "textStyle": {
             "fontSize": 14
         },
@@ -476,14 +480,13 @@
         },
         "instancing": false,
         "itemStyle": {
-            "color": "rgb(5,101,123)",
-            "borderColor": "rgb(62,215,213)",
-            "borderWidth": 0.8,
-            "opacity": 1
+            "color": "rgba(75,0,130,0.5)",
+            "borderColor": "rgba(0,0,139,0.5)",
+            "borderWidth": 1,
+            "opacity": 0.5
         },
         "label": {
-            "show": false,
-            "formatter": function(data){return data.name +  + data.value[2];}
+            "show": false
         },
         "emphasis": {
             "label": {
@@ -491,22 +494,22 @@
                 "color": "#fff",
                 "margin": 8,
                 "fontSize": 10,
-                "backgroundColor": "rgba(0,23,11,0)",
+                "backgroundColor": "rgba(0,0,0,0.5)",
                 "valueAnimation": false
             }
         },
         "light": {
             "main": {
-                "color": "#fff",
-                "intensity": 1.2,
+                "color": "#9370DB",
+                "intensity": 1.5,
                 "shadow": false,
                 "shadowQuality": "high",
                 "alpha": 40,
-                "beta": 10
+                "beta": 30
             },
             "ambient": {
                 "color": "#fff",
-                "intensity": 0.3
+                "intensity": 0.4
             },
             "ambientCubemap": {
                 "diffuseIntensity": 0.5,
@@ -536,11 +539,14 @@
             "itemGap": 10,
             "textAlign": "auto",
             "textVerticalAlign": "auto",
-            "triggerEvent": false
+            "triggerEvent": false,
+            "textStyle": {
+                "color": "#9370DB"
+            }
         }
     ]
 };
-        chart_7fe4a91660684e3e9b05f9b6416eeeff.setOption(option_7fe4a91660684e3e9b05f9b6416eeeff);
+        chart_7c372e4c2f5049ee8b72ef7dba06dea3.setOption(option_7c372e4c2f5049ee8b72ef7dba06dea3);
     </script>
 </body>
 </html>
