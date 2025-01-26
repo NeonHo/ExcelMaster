@@ -11,11 +11,12 @@
     
 </head>
 <body >
-    <div id="7c372e4c2f5049ee8b72ef7dba06dea3" class="chart-container" style="width:900px; height:600px; "></div>
+    <div id="bcb05117b5534399999098c31341a06c" class="chart-container" style="width:900px; height:600px; "></div>
     <script>
-        var chart_7c372e4c2f5049ee8b72ef7dba06dea3 = echarts.init(
-            document.getElementById('7c372e4c2f5049ee8b72ef7dba06dea3'), 'purple-passion', {renderer: 'canvas'});
-        var option_7c372e4c2f5049ee8b72ef7dba06dea3 = {
+        var chart_bcb05117b5534399999098c31341a06c = echarts.init(
+            document.getElementById('bcb05117b5534399999098c31341a06c'), 'purple-passion', {renderer: 'canvas'});
+        var option_bcb05117b5534399999098c31341a06c = {
+    "backgroundColor": "rgba(0, 0, 51, 1)",
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -45,7 +46,6 @@
                 "valueAnimation": false
             },
             "itemStyle": {
-                "color": "rgba(255,105,180,0.7)",
                 "opacity": 0.7
             },
             "emphasis": {},
@@ -544,9 +544,35 @@
                 "color": "#9370DB"
             }
         }
-    ]
+    ],
+    "visualMap": {
+        "show": true,
+        "type": "continuous",
+        "min": 20,
+        "max": 50,
+        "inRange": {
+            "color": [
+                "#50a3ba",
+                "#eac763",
+                "#d94e5d"
+            ]
+        },
+        "calculable": true,
+        "inverse": false,
+        "splitNumber": 5,
+        "dimension": 2,
+        "hoverLink": true,
+        "orient": "vertical",
+        "left": "left",
+        "top": "bottom",
+        "padding": 5,
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 140,
+        "borderWidth": 0
+    }
 };
-        chart_7c372e4c2f5049ee8b72ef7dba06dea3.setOption(option_7c372e4c2f5049ee8b72ef7dba06dea3);
+        chart_bcb05117b5534399999098c31341a06c.setOption(option_bcb05117b5534399999098c31341a06c);
     </script>
 </body>
 </html>

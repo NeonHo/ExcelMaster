@@ -98,6 +98,7 @@ map3d = Map3D(
         theme=ThemeType.PURPLE_PASSION,
         width='900px',
         height='600px',
+        bg_color='rgba(0, 0, 51, 1)'  # Dark blue background color
     )
 )
 
@@ -135,7 +136,6 @@ map3d.add_schema(
         is_show=False,
     ),
     itemstyle_opts=opts.ItemStyleOpts(
-        color="rgba(255,105,180,0.7)",  # Pink color with transparency
         opacity=0.7,
     ),
 ).set_global_opts(
@@ -143,6 +143,14 @@ map3d.add_schema(
     tooltip_opts=opts.TooltipOpts(
         formatter=JsCode("function(data){return data.name + ' 通勤半径：' + data.value[2];}"),
     ),
+    visualmap_opts=opts.VisualMapOpts(
+        is_show=True,
+        min_=20,
+        max_=50,
+        pos_left="left",
+        pos_top="bottom",
+        dimension=2,
+    )
 )
 
 
