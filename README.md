@@ -14,6 +14,11 @@ This is also our Data-Visualiztion Toolkit.
     1. If it works:
         1. Good, Go ahead!
 
-# Requirements List.
+# Pipe Line
 - [x] Visualize the data using PyEcharts.
+  - [x] OCR the PNG in PDF to collect the data into MarkDown tables.
+  - [x] Convert the MarkDown tables into Excel file and DataFrame of Pandas.
+  - [x] Convert the DataFrame into a list.
+  - [x] Combine the list with other list.
+  - [x] PyEcharts Visualiztion and export HTML files.
 - [ ] Export the 3D objects for Blender.
