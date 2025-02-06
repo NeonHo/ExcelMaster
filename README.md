@@ -21,4 +21,9 @@ This is also our Data-Visualiztion Toolkit.
   - [x] Convert the DataFrame into a list.
   - [x] Combine the list with other list.
   - [x] PyEcharts Visualiztion and export HTML files.
+- [ ] Animation of the Charts.
+  - [ ] Echarts is more powerful, but using TypeScript and JavaScript, I think the effect of Video is the most charming point, so we switch to Echarts.
+    - [x] node v22.13.1
+    - [x] npm 11.1.0
+    - [x] TypeScript Version 5.7.3
 - [ ] Export the 3D objects for Blender.
