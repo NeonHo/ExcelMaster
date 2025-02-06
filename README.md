@@ -14,7 +14,7 @@ This is also our Data-Visualiztion Toolkit.
     1. If it works:
         1. Good, Go ahead!
 
-# Pipe Line
+# Try to construct pipeline
 - [x] Visualize the data using PyEcharts.
   - [x] OCR the PNG in PDF to collect the data into MarkDown tables.
   - [x] Convert the MarkDown tables into Excel file and DataFrame of Pandas.
@@ -27,4 +27,5 @@ This is also our Data-Visualiztion Toolkit.
     - [x] npm 11.1.0
     - [x] TypeScript Version 5.7.3
     - [x] ts-node v10.9.2
+    - [x] `npm install echarts`
 - [ ] Export the 3D objects for Blender.
