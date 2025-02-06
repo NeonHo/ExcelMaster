@@ -26,4 +26,5 @@ This is also our Data-Visualiztion Toolkit.
     - [x] node v22.13.1
     - [x] npm 11.1.0
     - [x] TypeScript Version 5.7.3
+    - [x] ts-node v10.9.2
 - [ ] Export the 3D objects for Blender.
